@@ -112,6 +112,10 @@ h1, h2, h3, h4, h5 {
   .banner-bg, .footer-bg {
     width: 100%;
   }
+  .banner-bg, .footer-bg {
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
 }
 
 .content-wrapper {
@@ -119,7 +123,10 @@ h1, h2, h3, h4, h5 {
 }
 @media screen and (max-width: 992px) {
   .content-wrapper {
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+  .demo-gallery > ul > li {
+    padding: 0;
   }
 }
 
@@ -329,12 +336,15 @@ h3.profile-title {
 }
 
 .welcome-text {
+  line-height: 100%;
+  color: white;
+  font-family: 'Cormorant', serif;
   position: relative;
   z-index: 4;
 }
 .welcome-text * {
+  line-height: 100%;
   color: white;
-  font-family: 'Cormorant', serif;
 }
 /* faking subtitle but h1 instead */
 .welcome-text h1, .welcome-text h3 {
@@ -717,7 +727,7 @@ iframe {
 -------------------------------------------------------- */
 .footer-bg {
   margin-top: 40px;
-  padding: 100px 0px;
+  padding: 100px 80px;
   position: relative;
   background: url("../img/footer-bg.jpg");
   background-repeat: no-repeat;
@@ -741,12 +751,13 @@ iframe {
   z-index: 4;
 }
 .footer-text * {
+  line-height: 100%;
   color: white;
-  font-family: 'Cormorant', serif;
 }
 .footer-text h2 {
   font-size: 42px;
 }
+
 #footer p.copyright-text {
   margin: 40px 0;
   font-size: 19px;
