@@ -318,7 +318,7 @@ h3.profile-title {
 .banner-bg {
   padding: 225px 80px;
   position: relative;
-  background: url("../img/welcome-bg.jpg");
+  background: url("../img/Mercator-welcome-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -729,7 +729,7 @@ iframe {
   margin-top: 40px;
   padding: 100px 80px;
   position: relative;
-  background: url("../img/footer-bg.jpg");
+  background: url("../img/Prins-Willem-footer-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
