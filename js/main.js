@@ -13,9 +13,8 @@
         return false;
     });
 
-		// Super gallery
-		lightGallery(document.getElementById('lightgallery'), {
-				altRegExp: v => v.substr(v.lastIndexOf('/') + 1).replace(/[-_]/g, ' ').replace(/.(JPEG|JPG|PNG)/gi, ''),
+		// lightGallery
+		$('#lightgallery').lightGallery({
 				selector: '.pic'
 		})
 
