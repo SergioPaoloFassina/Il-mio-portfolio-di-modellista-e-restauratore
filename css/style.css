@@ -45,6 +45,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
 /*---------------------------------------------------------
  2. Basic Style
 -------------------------------------------------------- */
@@ -124,9 +133,6 @@ h1, h2, h3, h4, h5 {
 @media screen and (max-width: 992px) {
   .content-wrapper {
     padding: 0 20px;
-  }
-  .demo-gallery > ul > li {
-    padding: 0;
   }
 }
 
@@ -576,6 +582,31 @@ h3.profile-title {
 .lg-sub-html p {
     font-size: 16px;
     margin: 5px 0 0;
+}
+
+@media screen and (max-width: 992px) {
+  .demo-gallery > ul > li {
+    padding: 0;
+  }
+	.lg-outer .lg-thumb-outer {
+	    display: none;
+	}
+	.lg-sub-html {
+		bottom: 0!important;
+    background: linear-gradient(to bottom, rgba(0,0,0, 0), rgba(0,0,0, 0.5));
+	}
+	.lg-sub-html h4 {
+		font-size: 20px;
+		color: #fff;
+		text-shadow:
+		 -1px -1px 0 #333,
+			1px -1px 0 #333,
+			-1px 1px 0 #333,
+			 1px 1px 0 #333;
+	}
+	.lg-sub-html p {
+	    display: none;
+	}
 }
 
 /*------ map ------ */
