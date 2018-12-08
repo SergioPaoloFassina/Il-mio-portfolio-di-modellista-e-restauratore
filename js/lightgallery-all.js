@@ -305,7 +305,7 @@
         }
 
         if (this.s.appendSubHtmlTo === '.lg-sub-html') {
-            subHtmlCont = '<div class="lg-sub-html"></div>';
+            subHtmlCont = '<div class="lg-sub-html hide-with-controls"></div>';
         }
 
         template = '<div class="lg-outer ' + this.s.addClass + ' ' + this.s.startClass + '">' +
