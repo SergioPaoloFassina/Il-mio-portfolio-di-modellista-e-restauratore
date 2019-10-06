@@ -29,11 +29,8 @@
       <div class="content-wrapper">
 
         <div id="about" class="page-section"></div>
-        <hr>
         <div id="models" class="page-section"></div>
-        <hr>
         <div id="map" class="page-section"></div>
-        <hr>
         <div id="contact" class="page-section"></div>
 
       </div>
@@ -44,29 +41,24 @@
 
   <script src="js/jquery-1.10.2.min.js"></script>
   <script>
-    $('#sidebar').load('sidebar.html', function(){
-        $.getScript("js/sidebar.js"); 
-    });
     
-    $('#top').load('top.html', function(){
-        $.getScript("js/top.js"); 
-    });
+    var components = ['sidebar', 'top', 'about', 'models', 'map', 'contact', 'footer']; {
+      sidebar: [],
+      top: [],
+      about: [],
+      models: [],
+      map: [],
+      contact: [],
+      footer: []
+    };
     
-    $('#about').load('about.html');
+    Object.keys(components)
+      .map(name => {
+        $('#' + name).load( name + '.html', function(){
+          $.getScript('js/' + name + '.js'); 
+        });
+      });
     
-    $('#models').load('models.html', function(){
-        $.getScript("js/models.js"); 
-    });
-    
-    $('#map').load('map.html', function(){
-        $.getScript("js/map.js"); 
-    });
-    
-    $('#contact').load('contact.html', function(){
-        $.getScript("js/contact.js"); 
-    });
-    
-    $('#footer').load('footer.html');
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
   <script src="js/lightgallery-all.js"></script>
