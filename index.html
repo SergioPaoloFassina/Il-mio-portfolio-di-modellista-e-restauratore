@@ -20,28 +20,33 @@
 
 <body>
 
-  <html-include src="sidebar.html"></html-include>
-  <html-include src="banner.html"></html-include>
+  <div id="sidebar"></div>
+  <div id="top" class="banner-bg"></div>
 
   <!-- MAIN CONTENT -->
   <div class="main-content">
     <div class="fluid-container">
       <div class="content-wrapper">
 
-        <html-include src="about.html"></html-include>
-        <html-include src="models.html"></html-include>
-        <html-include src="map.html"></html-include>
-        <html-include src="contact.html"></html-include>
+        <div id="about" class="page-section"></div>
+        <hr>
+        <div id="models" class="page-section"></div>
+        <hr>
+        <div id="map" class="page-section"></div>
+        <hr>
+        <div id="contact" class="page-section"></div>
 
       </div>
     </div>
   </div>
 
-  <html-include src="footer.html"></html-include>
+  <div id="footer" class="footer-bg"></div>
 
-  <script src="js/html-include.min.js"></script>
   <script src="js/jquery-1.10.2.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+  <script>
+    ['sidebar', 'banner', 'about', 'models', 'map', 'contact', 'footer']
+      .map(s => $("#" + s).load(s + '.html'));
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
   <script src="js/lightgallery-all.js"></script>
   <script src="js/plugins.js"></script>
