@@ -44,7 +44,7 @@
     
     var components = ['sidebar', 'top', 'about', 'models', 'map', 'contact', 'footer'];
     
-    Object.keys(components)
+    components
       .map(name => {
         $('#' + name).load( name + '.html', function(){
           $.getScript('js/' + name + '.js'); 
