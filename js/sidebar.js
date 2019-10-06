@@ -1,14 +1,27 @@
-$('.navigation').singlePageNav({
-    currentClass : 'active'
-});
+(function($) {
+    "use strict";
+    
+    $('.navigation').singlePageNav({
+        currentClass : 'active'
+    });
 
-$('.toggle-menu').click(function(){
-    $('.responsive-menu').stop(true,true).slideToggle();
-    return false;
-});
+    $('.toggle-menu').click(function(){
+        $('.responsive-menu').stop(true,true).slideToggle();
+        return false;
+    });
+})(jQuery);
 
-// Avoid `console` errors in browsers that lack a console.
-(function() {
+/**
+ * Single Page Nav Plugin
+ * Copyright (c) 2013 Chris Wojcik <hello@chriswojcik.net>
+ * Dual licensed under MIT and GPL.
+ * @author Chris Wojcik
+ * @version 1.1.0
+ */
+(function($, window, document, undefined) {
+    "use strict";
+    
+    // Avoid `console` errors in browsers that lack a console.
     var method;
     var noop = function () {};
     var methods = [
@@ -28,30 +41,15 @@ $('.toggle-menu').click(function(){
             console[method] = noop;
         }
     }
-}());
-
-// Place any jQuery/helper plugins in here.
-
-
-/**
- * Single Page Nav Plugin
- * Copyright (c) 2013 Chris Wojcik <hello@chriswojcik.net>
- * Dual licensed under MIT and GPL.
- * @author Chris Wojcik
- * @version 1.1.0
- */
-
-// Utility
-if (typeof Object.create !== 'function') {
-    Object.create = function(obj) {
-        function F() {}
-        F.prototype = obj;
-        return new F();
-    };
-}
-
-(function($, window, document, undefined) {
-    "use strict";
+    
+    // Utility
+    if (typeof Object.create !== 'function') {
+        Object.create = function(obj) {
+            function F() {}
+            F.prototype = obj;
+            return new F();
+        };
+    }
     
     var SinglePageNav = {
         
