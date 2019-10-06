@@ -1,0 +1,3 @@
+$('#lightgallery').lightGallery({
+    selector: '.pic'
+})
