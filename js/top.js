@@ -1,7 +1,11 @@
-var intro = document.querySelector('.banner-bg');
-var introPlayer = document.querySelector('.banner-video');
+(function ($) {
+    "use strict";
 
-if (/iPad|iPhone|iPod/.test(navigator.platform)) {
-    intro.style.backgroundImage = 'url("' + introPlayer.poster + '")';
-    introPlayer.style.display = 'none';
-}
+    var intro = $('.banner-bg');
+    var introPlayer = $('.banner-video');
+
+    if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+        intro.style.backgroundImage = 'url("' + introPlayer.poster + '")';
+        introPlayer.style.display = 'none';
+    }
+})(jQuery);
