@@ -19,7 +19,63 @@
 
 <body>
 
-  <html-include src="sidebar.html"></html-include>
+  <!-- SIDEBAR -->
+  <div class="responsive-header visible-xs visible-sm">
+      <div class="container">
+          <div class="row">
+          <div class="col-md-12">
+              <div class="top-section">
+              <div class="profile-content">
+                  <h3 class="profile-title text-center">Sergio Paolo Fassina</h3>
+                  <p class="profile-description text-center">Modellista e Restauratore</p>
+              </div>
+              </div>
+          </div>
+          </div>
+          <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+          <div class="main-navigation responsive-menu">
+          <ul class="navigation">
+              <li><a href="#top"></i>Introduzione</a></li>
+              <li><a href="#about"></i>Chi sono</a></li>
+              <li><a href="#models"></i>I miei modelli</a></li>
+              <!--<li><a href="#repairs"></i>Restaurazioni</a></li>-->
+              <li><a href="#map"></i>Dove trovarmi</a></li>
+              <li><a href="#contact"></i>Contattami</a></li>
+          </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="sidebar-menu hidden-xs hidden-sm">
+      <div class="top-section">
+          <h3 class="profile-title text-center">Sergio Paolo Fassina</h3>
+          <p class="profile-description text-center">Modellista e Restauratore</p>
+      </div>
+      <!-- top-section -->
+      <div class="main-navigation">
+          <ul class="navigation">
+          <li><a data-scroll href="#top"><i class="fa fa-home"></i>Introduzione</a></li>
+          <li><a data-scroll href="#about"><i class="fa fa-life-ring"></i>Chi sono</a></li>
+          <li><a data-scroll href="#models"><i class="fa fa-anchor"></i>I miei modelli</a></li>
+          <!--<li><a data-scroll href="#repairs"><i class="fa fa-paint-brush"></i>Restaurazioni</a></li>-->
+          <li><a data-scroll href="#map"><i class="fa fa-map-marker"></i></i>Dove trovarmi</a></li>
+          <li><a data-scroll href="#contact"><i class="fa fa-envelope"></i>Contatti</a></li>
+          </ul>
+      </div>
+      <!-- .main-navigation -->
+      <div class="social-icons">
+          <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+      </div>
+      <!-- .social-icons -->
+  </div>
+  <!-- /SIDEBAR -->
+
   <html-include src="banner.html"></html-include>
 
   <!-- MAIN CONTENT -->
@@ -41,9 +97,14 @@
 
   <html-include src="footer.html"></html-include>
 
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script src="js/lightgallery-all.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/html-include.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd-wfRplxgUjt_kYZ-DkK49tMfWg-hycA"></script>
+  <script src="js/map-custom.js"></script>
 
   <!-- Shinystat analytics -->
   <script type="text/javascript" src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=sergiofassina"></script>
