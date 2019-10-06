@@ -325,9 +325,13 @@ h3.profile-title {
   padding: 225px 80px;
   position: relative;
   background: rgba(0, 0, 0, 0.5) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  overflow: hidden;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100vh;
+  letter-spacing: 2px;
 }
 
 .banner-video {
