@@ -45,12 +45,34 @@
   <script src="js/jquery-1.10.2.min.js"></script>
   <script>
     ['sidebar', 'top', 'about', 'models', 'map', 'contact', 'footer']
-      .map(s => $("#" + s).load(s + '.html'));
+    
+    $('#sidebar').load('sidebar.html', function(){
+        $.getScript("js/sidebar.js"); 
+    });
+    
+    $('#top').load('top.html', function(){
+        $.getScript("js/top.js"); 
+    });
+    
+    $('#about').load('about.html'});
+    
+    $('#models').load('models.html', function(){
+        $.getScript("js/models.js"); 
+    });
+    
+    $('#map').load('map.html', function(){
+        $.getScript("js/map.js"); 
+    });
+    
+    $('#contact').load('contact.html', function(){
+        $.getScript("js/contact.js"); 
+    });
+    
+    $('#footer').load('footer.html'});
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
   <script src="js/lightgallery-all.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd-wfRplxgUjt_kYZ-DkK49tMfWg-hycA"></script>
 
   <!-- Shinystat analytics -->
   <script type="text/javascript" src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=sergiofassina"></script>
