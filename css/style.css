@@ -62,10 +62,10 @@ html {
 }
 
 body {
-  font-size: 20px;
-  line-height: 30px;
-  color: #444;
-  font-family: 'Cormorant', serif;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  color: #000;
   overflow-x: hidden;
 }
 
@@ -137,12 +137,12 @@ h1, h2, h3, h4, h5 {
 }
 
 h4.widget-title {
-  font-size: 22px;
+  font-size: 1.5rem;
   margin-bottom: 40px;
 }
 
 .image-caption {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 5px 10px;
   color: #fff;
   text-shadow:
@@ -205,7 +205,7 @@ hr {
 h3.profile-title {
   margin-bottom: 5px;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: 'Cormorant', serif;
 }
 
@@ -219,11 +219,11 @@ h3.profile-title {
   padding: 15px 40px;
   display: block;
   color: white;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 .main-navigation li a i {
   margin-right: 15px;
-  font-size: 30px;
+  font-size: 2rem;
 }
 .main-navigation li a:hover {
   background: #b3b3b3;
@@ -247,7 +247,7 @@ h3.profile-title {
   margin-right: 20px;
 }
 .social-icons a {
-  font-size:24px;
+  font-size: 1.5rem;
   color: white;
 }
 .social-icons a:hover {
@@ -311,7 +311,7 @@ h3.profile-title {
   margin-top: 30px;
   background: #6cc0f7;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .toggle-menu:hover {
   color: white;
@@ -324,23 +324,25 @@ h3.profile-title {
 .banner-bg {
   padding: 225px 80px;
   position: relative;
-  background: url("../img/Mercator-welcome-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
+  background: rgba(0, 0, 0, 0.5) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=");
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100vh;
+  letter-spacing: 2px;
 }
-
-.banner-overlay {
+.banner-video {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(95, 109, 126, 0.4);
-  top: 0;
-  left: 0;
-  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
 }
-
 .welcome-text {
   line-height: 100%;
   color: white;
@@ -354,21 +356,21 @@ h3.profile-title {
 }
 /* faking subtitle but h1 instead */
 .welcome-text h1, .welcome-text h3 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 .welcome-text h2 {
-  font-size: 42px;
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 .welcome-text h4 {
-  font-size: 26px;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 .welcome-text h5 {
-  font-size: 20px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
-}
+} */
 
 /*------ about us ------ */
 .about-image {
@@ -432,7 +434,7 @@ h3.profile-title {
   padding: 30px;
 }
 .project-hover h5 {
-  font-size: 22px;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 .project-hover h5 a {
@@ -440,8 +442,8 @@ h3.profile-title {
 }
 .project-hover p {
   color: white;
-  font-size: 19px;
-  line-height: 22px;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
 }
 
 /*------ gallery ------ */
@@ -574,13 +576,13 @@ h3.profile-title {
 
 .lg-sub-html h4 {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #aaa;
 }
 
 .lg-sub-html p {
-    font-size: 16px;
+    font-size: 1.5rem;
     margin: 5px 0 0;
 }
 
@@ -596,7 +598,7 @@ h3.profile-title {
     background: linear-gradient(to bottom, rgba(0,0,0, 0), rgba(0,0,0, 0.5));
 	}
 	.lg-sub-html h4 {
-		font-size: 20px;
+		font-size: 1.5rem;
 		color: #fff;
 		text-shadow:
 		 -1px -1px 0 #333,
@@ -616,7 +618,7 @@ h3.profile-title {
 }
 
 .more {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -697,7 +699,7 @@ iframe {
 
   font-family: Poppins-Medium;
   color: #c80000;
-  font-size: 14px;
+  font-size: 1.5rem;
   line-height: 1.4;
   text-align: left;
 
@@ -716,7 +718,7 @@ iframe {
   display: block;
   position: absolute;
   color: #c80000;
-  font-size: 18px;
+  font-size: 1.5rem;
   bottom: calc((100% - 25px) / 2);
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
@@ -734,7 +736,7 @@ iframe {
 .true-validate::after {
   content: "\F058";
   font-family: FontAwesome;
-  font-size: 22px;
+  font-size: 1.5rem;
   color: #00ad5f;
   display: -webkit-box;
   display: -webkit-flex;
@@ -786,12 +788,12 @@ iframe {
   color: white;
 }
 .footer-text h2 {
-  font-size: 42px;
+  font-size: 3rem;
 }
 
 #footer p.copyright-text {
   margin: 40px 0;
-  font-size: 19px;
+  font-size: 1.5rem;
 }
 #footer p.copyright-text a {
   color: #5f6d7e;
